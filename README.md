@@ -1,12 +1,10 @@
-# vite React TypeScript tailwindcss starter
+# Delawvery Test Challenge
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+Built with vite, React + tailwindcss + TypeScript.
 
 ## About
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
-
-![Screenshot](assets/screenshot.png)
+Implementation of auth and file upload
 
 ### Libraries
 
@@ -20,19 +18,12 @@ Template for vite, React + tailwindcss + TypeScript projects with some tools pre
 
 ### Tools
 
-- [commitlint 17](https://commitlint.js.org)
-- [Conventional Commits 1](https://www.conventionalcommits.org)
 - [editorconfig](https://editorconfig.org/)
 - [eslint 8](https://eslint.org/)
-- [husky 8](https://typicode.github.io/husky/#/)
 - [Prettier 2](https://prettier.io/)
 - [VS Code settings](https://code.visualstudio.com/)
 
 ## Usage
-
-Create a new project from this template by clicking the "Use this template" button:
-
-![](assets/template-usage.png)
 
 ```bash
 yarn
