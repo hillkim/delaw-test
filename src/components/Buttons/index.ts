@@ -1,2 +1,2 @@
 export { default as GoogleButton } from './GoogleButton'
-export { default as LoginButton } from './LoginButton'
+export { default as PrimaryButton } from './PrimaryButton'

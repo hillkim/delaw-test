@@ -14,7 +14,7 @@ interface DropDownProps {
 const DropDown = ({ onChange, value, options, placeholder }: DropDownProps) => {
   return (
     <select
-      className="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal"
+      className="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal w-32 rtl:text-left "
       onChange={(e) => onChange?.(e.target.value)}
       value={value}
       defaultValue={value}
@@ -28,13 +28,5 @@ const DropDown = ({ onChange, value, options, placeholder }: DropDownProps) => {
     </select>
   )
 }
-
-// ;<DropDown
-//   placeholder="Language"
-//   options={[
-//     { value: 'en', label: 'English' },
-//     { value: 'he', label: 'עברית' }
-//   ]}
-// />
 
 export default DropDown
