@@ -6,6 +6,7 @@ export interface FileDetails {
   uploadedOn: string
   numberOfPages: string
   sizeOfFile: string
+  id: string
 }
 
 export interface UploadState {
@@ -36,6 +37,12 @@ export const uploadSlice = createSlice({
     setUploadFailure: (state, action: PayloadAction<string>) => {
       state.loading = false
       state.error = action.payload
+    },
+    setUploadingLoading: (state, action: PayloadAction<boolean>) => {
+      state.loading = action.payload
+    },
+    setUploadedFiles: (state, action: PayloadAction<FileDetails[]>) => {
+      state.files = action.payload
     }
   }
 })
@@ -44,7 +51,9 @@ export const {
   setFileDetails,
   setUploadStart,
   setUploadSuccess,
-  setUploadFailure
+  setUploadFailure,
+  setUploadingLoading,
+  setUploadedFiles
 } = uploadSlice.actions
 
 export const uploadReducer = uploadSlice.reducer
