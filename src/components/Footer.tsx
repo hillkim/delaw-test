@@ -1,3 +1,5 @@
+import { useAppSelector } from '../store'
+
 const InstagramIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24">
     <path
@@ -44,10 +46,13 @@ const Footer = () => {
       url: 'https://www.instagram.com/delawvery'
     }
   ]
+  const translations = useAppSelector((state) => state.auth.appTranslations)
+
+  const footerTexts = translations.footer
 
   return (
-    <div className="flex justify-center flex-col m-auto  text-center text-lg dark:text-slate-400 ">
-      <p>Connect with us on</p>
+    <div className="flex justify-center flex-col m-auto mt-10  text-center text-lg dark:text-slate-400 ">
+      <p>{footerTexts.conectWithus}</p>
       <div className="flex items-center justify-center space-x-2 mt-4 flex-wrap">
         {socials.map((social) => (
           <a
@@ -61,7 +66,7 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p className=" mt-16 font-light text-sm mb-2">
+      <p className=" mt-8 font-light text-sm mb-2">
         © {new Date().getFullYear()} Delawvery
       </p>
     </div>
