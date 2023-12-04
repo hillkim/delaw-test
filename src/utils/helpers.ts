@@ -5,8 +5,8 @@ const showErrorMessage = (message: string) => {
   Swal.fire({
     icon: 'error',
     title: language === 'en' ? 'Error!' : 'שגיאה!',
-
-    text: message
+    text: message,
+    confirmButtonText: language === 'en' ? 'OK' : 'אישור'
   }).then()
 }
 
@@ -15,7 +15,8 @@ const showSuccessMessage = (message: string) => {
   Swal.fire({
     icon: 'success',
     title: language === 'en' ? 'Success!' : 'הצלחה!',
-    text: message
+    text: message,
+    confirmButtonText: language === 'en' ? 'OK' : 'אישור'
   }).then()
 }
 
@@ -24,7 +25,8 @@ const showInfoMessage = (message: string, onClickCallback?: () => void) => {
   Swal.fire({
     icon: 'info',
     title: language === 'en' ? 'Info!' : 'מידע!',
-    text: message
+    text: message,
+    confirmButtonText: language === 'en' ? 'OK' : 'אישור'
   }).then(onClickCallback?.bind(null))
 }
 
