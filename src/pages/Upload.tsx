@@ -155,9 +155,13 @@ const UploadForm = () => {
         })
       }
 
-      console.log(url)
-      console.log(file)
       showSuccessMessage(translations.messages.fileUploadSuccess)
+
+      // reset state
+      setFiles(null)
+      setNumberOfPages(0)
+      setHasToEnterNumberOfPages(false)
+
       dispatch(setUploadingLoading(false))
     } catch (error) {
       console.log(error)
