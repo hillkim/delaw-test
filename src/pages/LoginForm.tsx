@@ -111,7 +111,7 @@ const LoginForm = () => {
               <h2 className="text-3xl md:text-4xl font-bold">{texts.signIn}</h2>
               <p className="text-md md:text-xl">{texts.subtitle}</p>
             </div>
-            <form className="flex flex-col max-w-md space-y-5">
+            <form className="flex flex-col max-w-md gap-2">
               <Input
                 placeholder={texts.email}
                 type="email"

@@ -24,7 +24,7 @@ const Input: React.FC<InputProps> = ({
   const isPassword = type === 'password'
   const [showPassword, setShowPassword] = React.useState(false)
   return (
-    <div className="flex flex-col space-y-2 relative mb-2">
+    <div className="flex flex-col relative mb-10">
       <input
         type={isPassword && !showPassword ? 'password' : type}
         placeholder={placeholder}
@@ -41,7 +41,9 @@ const Input: React.FC<InputProps> = ({
         defaultValue={value}
         disabled={disabled}
       />
-      {error && <p className="text-red-600 absolute bottom-[-25px]">{error}</p>}
+      {error && (
+        <p className="text-red-600 absolute bottom-[-30px] ">{error}</p>
+      )}
     </div>
   )
 }
