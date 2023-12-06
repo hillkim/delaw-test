@@ -26,7 +26,8 @@ const translations = {
       or: 'Or',
       signUpWithGoogle: 'Sign up with Google',
       invalidEmail: 'Enter a valid email',
-      invalidPassword: 'Enter a valid password'
+      invalidPassword: 'Enter a valid password',
+      passwordsNotMatch: 'Passwords do not match'
     },
     table: {
       title: 'All Uploaded Files',
@@ -130,7 +131,8 @@ const translations = {
       or: 'או',
       signUpWithGoogle: 'הירשם עם גוגל',
       invalidEmail: 'אנא הכנס אימייל תקין',
-      invalidPassword: 'אנא הכנס סיסמא תקינה'
+      invalidPassword: 'אנא הכנס סיסמא תקינה',
+      passwordsNotMatch: 'הסיסמאות אינן תואמות'
     },
     table: {
       title: 'כל הקבצים שהועלו',

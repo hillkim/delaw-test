@@ -69,6 +69,14 @@ const SignUpForm = () => {
       onChange(confirmPassword.value, 'password', setConfirmPassword)
       return
     }
+    if (password.value !== confirmPassword.value) {
+      setPassword({ value: password.value, error: texts.passwordsNotMatch })
+      setConfirmPassword({
+        value: confirmPassword.value,
+        error: texts.passwordsNotMatch
+      })
+      return
+    }
 
     dispatch(signUpWithEmail(email.value, password.value))
   }
