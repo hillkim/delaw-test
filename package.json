@@ -5,6 +5,7 @@
     "start": "vite",
     "build": "tsc && vite build && echo '/* /index.html  200' | cat >dist/_redirects",
     "serve": "vite preview --port 3000",
+    "deploy": "ntl deploy --prod --dir=dist",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "test": "vitest"
   },
